@@ -1,14 +1,51 @@
+:root {
+    --color-accent: #a3c4f3;
+
+    --color-text-normal: #3f3f3f;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-    --color-text-normal: #3f3f3f;
-}
-
 body {
     color: var(--color-text-normal);
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
+}
+
+/* site-header */
+
+#site-header {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.site-title {
+    font-family: 'Zen Old Mincho', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* home */
+
+main.home {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+.home-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.home-category nav a {
+    display: block;
+}
+
+/* footer */
+
+#site-footer p {
+    text-align: center;
 }
