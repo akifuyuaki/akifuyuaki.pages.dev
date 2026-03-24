@@ -6,6 +6,7 @@
     --color-link-normal: #6a93c8;
     --color-link-hover: #93bde8;
     --color-link-active: #3d5f96;
+    --color-link-visited: #7a8ab0;
 
     --bg-base: linear-gradient(135deg, #f5f5f5 0%, #eef2f3 50%, #e0eafc 100%);
 
@@ -51,6 +52,7 @@ body {
     font-weight: 400;
     margin: 0 auto;
     padding-block: 1.25rem;
+    padding-inline: 0.5rem;
     width: 70vw;
 }
 
@@ -142,6 +144,7 @@ main.home {
     cursor: pointer;
     font-size: 1rem;
     font-weight: bold;
+    padding-block: 0.25rem;
     transition: color 0.2s ease;
 }
 
@@ -176,7 +179,7 @@ main.home {
     border-radius: 1rem;
     box-shadow: var(--shadow-box);
     margin-top: 1.5rem;
-    padding-block: 1rem;
+    padding-block: 1.25rem;
     padding-inline: 1.5rem;
 }
 
@@ -215,6 +218,83 @@ main.home {
 
 .home-about a:active {
     color: var(--color-link-active);
+}
+
+/* main-page */
+
+main.page {
+    margin: 0 auto;
+    width: 70vw;
+}
+
+main .container {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 7fr 3fr;
+}
+
+main .box {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-box);
+}
+
+main .main-content {
+    padding-block: 1.25rem;
+    padding-inline: 1.5rem;
+}
+
+.main-content h1 {
+    margin-bottom: 0.75rem;
+}
+
+.main-content h2 {
+    margin-bottom: 0.25rem;
+}
+
+.main-content h3 {
+    margin-top: 0.75rem;
+}
+
+.main-content p {
+    line-height: 2;
+    padding-block: 0.25rem;
+}
+
+.main-content section {
+    margin-bottom: 1.5rem;
+}
+
+.main-content a {
+    color: var(--color-link-normal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.main-content a:hover {
+    color: var(--color-link-hover);
+}
+
+.main-content a:active {
+    color: var(--color-link-active);
+}
+
+.main-content a:visited {
+    color: var(--color-link-visited);
+}
+
+.main-content a:visited:hover {
+    color: var(--color-link-hover);
+}
+
+.main-content a:visited:active {
+    color: var(--color-link-active);
+}
+
+a .material-symbols-outlined {
+    font-size: 1.1225em;
+    vertical-align: text-bottom;
 }
 
 /* footer */
