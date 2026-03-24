@@ -17,6 +17,8 @@
 
     --shadow-box: 0 6px 32px rgba(0, 0, 0, 0.08);
 
+    --container-width: 70vw;
+
     --heading-line: linear-gradient(to right, var(--color-accent), transparent);
 }
 
@@ -79,7 +81,7 @@ body {
     margin: 0 auto;
     padding-block: 1.25rem;
     padding-inline: 0.5rem;
-    width: 70vw;
+    width: var(--container-width);
 }
 
 .site-title a {
@@ -92,7 +94,7 @@ body {
 
 main.home {
     margin: 0 auto;
-    width: 70vw;
+    width: var(--container-width);
     z-index: 0;
 }
 
@@ -250,10 +252,10 @@ main.home {
 
 main.page {
     margin: 0 auto;
-    width: 70vw;
+    width: var(--container-width);
 }
 
-main .container {
+main.page .container {
     display: grid;
     gap: 1.25rem;
     grid-template-columns: 7fr 3fr;
@@ -268,8 +270,22 @@ main .container {
     padding-inline: 1.5rem;
 }
 
-.main-content h1 {
+.main-content .title-wrapper {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 0.75rem;
+}
+
+.main-content h1 {
+    font-size: 1.65rem;
+    padding-bottom: 0.75rem;
+    margin-bottom: 0;
+}
+
+.main-content .update-date {
+    font-size: 15px;
+    padding: 0;
+    margin-left: 0.125rem;
+    margin-bottom: 0.25rem;
 }
 
 .main-content h2 {
@@ -342,16 +358,34 @@ a .material-symbols-outlined {
     text-align: center;
 }
 
-@media (max-width: 768px) {
-    .site-title {
-        width: 90vw;
-    }
+/* for tablet */
 
-    main.home {
-        width: 90vw;
+@media (max-width: 1199px) {
+    :root {
+        --container-width: 80vw;
     }
 
     .home-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    main.page .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* for phone */
+
+@media (max-width: 768px) {
+    :root {
+        --container-width: 90vw;
+    }
+
+    .home-links {
+        grid-template-columns: 1fr;
+    }
+
+    main.page .container {
         grid-template-columns: 1fr;
     }
 }
