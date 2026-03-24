@@ -3,5 +3,46 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="ホーム">
-    <h2>秋冬秋の記憶域</h2>
+    <main class="home">
+        <div class="home-links">
+            <section class="home-category">
+                <h2><a href="/languages/">語学</a></h2>
+                <nav>
+                    <a href="/languages/ancient-greek/">古典ギリシャ語</a>
+                    <a href="/languages/sanskrit/">サンスクリット</a>
+                    <div class="extra-wrapper">
+                        <div class="extra-content">
+                            <a href="/languages/latin/">ラテン語</a>
+                            <a href="/languages/finnish">フィンランド語</a>
+                            <a href="/languages/tagalog/">タガログ語</a>
+                            <a href="/languages/irish/">アイルランド語</a>
+                        </div>
+                    </div>
+                    <button class="more-links">もっと見る</button>
+                </nav>
+            </section>
+            <section class="home-category">
+                <h2><a href="/music/">音楽</a></h2>
+                <nav>
+                    <a href="/music/vocal-range/">音域調査</a>
+                </nav>
+            </section>
+            <section class="home-category">
+                <h2><a href="/apps/">アプリ・ツール</a></h2>
+            </section>
+        </div>
+        <div class="home-about">
+            <section>
+                <h2>このサイトについて</h2>
+                <p>超多趣味人間秋冬秋がやってきたこと、作ったものの記録を残す場所です。</p>
+                <p>
+                    「人間忘れ去られたときが本当の死」って言うでしょ？
+                    私は俗人で、現世に執着ありまくりだから、無料でも（Cloudflareがどうにかならない限り）ずっと残し続けられるCloudflare Pagesにして、
+                    この広いインターネットの片隅に私という人間の記録を残しておくことにしたのです。
+                </p>
+                <p>同じようなことを<a href="https://akifuyuaki.github.io/">GitHub Pagesのほう</a>でもやろうとしたけど動的ページ作りたかったのでCloudflareにしました。Cloudflareよ、永遠なれ。</p>
+                <p>※現在このページのリンクは大体繋がってませんし作ってすらいません。やりたいことリストってことで。いつか作ります。</p>
+            </section>
+        </div>
+    </main>
 </BaseLayout>
