@@ -311,3 +311,17 @@ a .material-symbols-outlined {
     padding-block: 1.25rem;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    .site-title {
+        width: 90vw;
+    }
+
+    main.home {
+        width: 90vw;
+    }
+
+    .home-links {
+        grid-template-columns: 1fr;
+    }
+}
