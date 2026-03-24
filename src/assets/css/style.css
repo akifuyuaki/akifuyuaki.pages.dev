@@ -234,14 +234,11 @@ main .container {
     grid-template-columns: 7fr 3fr;
 }
 
-main .box {
+.main-content {
     background: var(--glass-bg);
     border: var(--glass-border);
     border-radius: 1rem;
     box-shadow: var(--shadow-box);
-}
-
-.main-content {
     padding-block: 1.25rem;
     padding-inline: 1.5rem;
 }
@@ -291,6 +288,13 @@ main .box {
 
 .main-content a:visited:active {
     color: var(--color-link-active);
+}
+
+.sidebar {
+    background: var(--glass-bg);
+    border: var(--glass-border);
+    border-radius: 1rem;
+    box-shadow: var(--shadow-box);
 }
 
 a .material-symbols-outlined {

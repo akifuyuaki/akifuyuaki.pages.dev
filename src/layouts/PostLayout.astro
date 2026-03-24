@@ -1,0 +1,14 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+const { title } = Astro.props;
+---
+
+<BaseLayout title={title}>
+    <main class="page">
+        <div class="container">
+            <slot />
+
+            <slot name="sidebar"/>
+        </div>
+    </main>
+</BaseLayout>
