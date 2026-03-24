@@ -20,6 +20,31 @@
     --heading-line: linear-gradient(to right, var(--color-accent), transparent);
 }
 
+html {
+    background: var(--bg-base);
+    background-attachment: fixed;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(163, 196, 243, 0.65) rgba(238, 242, 243, 0.8);
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(238, 242, 243, 0.8); /* bg-baseの中間色に合わせた */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(163, 196, 243, 0.65);
+    border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(163, 196, 243, 0.85);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -27,8 +52,7 @@
 }
 
 body {
-    background: var(--bg-base);
-    background-attachment: fixed;
+    background: transparent;
     color: var(--color-text-normal);
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
     min-height: 100vh;
@@ -44,6 +68,7 @@ body {
     margin-bottom: 1.5rem;
     position: sticky;
     top: 0;
+    width: 100%;
     z-index: 100;
 }
 
