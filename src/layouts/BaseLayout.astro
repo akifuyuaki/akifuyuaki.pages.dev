@@ -24,24 +24,19 @@ const { title } = Astro.props;
         </header>
         <slot />
         <footer id="site-footer">
-            <p>&copy; 2026 秋冬秋の記憶域. All Rights Reserved.</p>
+            <p>&copy; 2026 秋冬秋の記憶域</p>
         </footer>
         <script>
-            // ページ遷移に対応する Astro 専用のイベント
             document.addEventListener("astro:page-load", () => {
                 const moreLinks = document.querySelectorAll(".more-links");
                 moreLinks.forEach((btn) => {
-                    // function(e) にして、引数 e (event) を受け取る
                     btn.addEventListener("click", function (e) {
-                        // this の代わりに e.currentTarget を使う
                         const target = e.currentTarget as HTMLElement;
                         const wrapper = target.previousElementSibling as HTMLElement;
 
-                        // 開閉状態のトグル
                         const isOpen = wrapper.classList.toggle("is-open");
                         target.classList.toggle("is-active");
 
-                        // テキストの切り替え
                         target.textContent = isOpen ? "閉じる" : "もっと見る";
                     });
                 });

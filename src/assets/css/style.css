@@ -28,6 +28,7 @@
 
 body {
     background: var(--bg-base);
+    background-attachment: fixed;
     color: var(--color-text-normal);
     font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP", sans-serif;
     min-height: 100vh;
@@ -240,7 +241,7 @@ main .box {
     box-shadow: var(--shadow-box);
 }
 
-main .main-content {
+.main-content {
     padding-block: 1.25rem;
     padding-inline: 1.5rem;
 }
