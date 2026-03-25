@@ -167,6 +167,20 @@ main.home {
     color: var(--color-link-active);
 }
 
+.home-category nav a.cta-link {
+    color: var(--color-link-normal);
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.home-category nav a.cta-link:hover {
+    color: var(--color-link-hover);
+}
+
+.home-category nav a.cta-link:active {
+    color: var(--color-link-active);
+}
+
 .home-category nav button {
     background: none;
     border: none;
