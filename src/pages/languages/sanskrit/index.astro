@@ -3,21 +3,29 @@ import PostLayout from '@/layouts/PostLayout.astro';
 ---
 
 <PostLayout title="サンスクリット | 語学">
-    <article class="main-content box">
+    <nav slot="breadcrumbs" class="breadcrumbs">
+        <a href="/">秋冬秋の記憶域</a>
+        <a href="/languages/">語学</a>
+        <a class="is-current">サンスクリット</a>
+    </nav>
+    <article class="main-content">
         <section>
-            <h1>サンスクリットの解説</h1>
+            <div class="title-wrapper">
+                <time class="update-date" datetime="2026-03-25">2026/03/25</time>
+                <h1>サンスクリットの解説</h1>
+            </div>
             <p>サンスクリットについて解説したページの一覧です。</p>
         </section>
         <section>
-            <h2><a href="/languages/sanskrit/letters-and-pronunciation">文字と発音</a></h2>
-            <p>サンスクリットの文字と発音について解説したページです。</p>
+            <h2><a href="/languages/sanskrit/grammar/">文法解説</a></h2>
+            <p>サンスクリットの文法を解説しています。</p>
         </section>
         <section>
-            <h2><a href="/languages/sanskrit/sandhi">連声（サンディ）</a></h2>
-            <p>サンスクリットの連声（サンディ）について解説したページです。</p>
+            <h2><a href="/languages/sanskrit/reading/">読解</a></h2>
+            <p>サンスクリットで書かれた文章・物語を実際にいろいろ読んでいきましょう。</p>
         </section>
     </article>
-    <aside slot="sidebar" class="sidebar box">
+    <aside slot="sidebar" class="sidebar">
 
     </aside>
 </PostLayout>

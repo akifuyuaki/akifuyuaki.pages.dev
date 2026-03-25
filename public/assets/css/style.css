@@ -305,7 +305,7 @@ main.page .container .article-container {
     padding-left: 0.25rem;
 }
 
-.breadcrumbs a:last-child {
+.breadcrumbs a.is-current {
     color: var(--color-text-light);
     font-weight: bold;
 }
@@ -334,6 +334,13 @@ main.page .container .article-container {
     font-size: 15px;
     padding: 0;
     margin-left: 0.125rem;
+}
+
+.main-content time.update-date::before {
+    content: "calendar_month";
+    font-family: 'Material Symbols Outlined';
+    padding-right: 0.25rem;
+    vertical-align: text-bottom;
 }
 
 .main-content h2 {
@@ -437,13 +444,17 @@ a .material-symbols-outlined {
     background: var(--glass-bg);
     border-top: var(--glass-border-surface);
     box-shadow: var(--shadow-box);
+    padding-block: 1.5rem;
     margin-top: 1.5rem;
 }
 
 #site-footer p {
     font-size: 15px;
-    padding-block: 1.25rem;
     text-align: center;
+}
+
+#site-footer p.copy {
+    padding-bottom: 0.5rem;
 }
 
 /* for tablet */
