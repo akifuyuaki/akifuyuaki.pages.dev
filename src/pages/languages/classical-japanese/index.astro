@@ -1,0 +1,23 @@
+---
+import PostLayout from "@/layouts/PostLayout.astro";
+import Profile from '@/components/Profile.astro';
+---
+
+<PostLayout title="古文 | 語学">
+    <nav slot="breadcrumbs" class="breadcrumbs">
+        <a href="/">秋冬秋の記憶域</a>
+        <a href="/languages/">語学</a>
+        <a class="is-current">古文</a>
+    </nav>
+    <article class="main-content">
+        <section>
+            <div class="title-wrapper">
+                <time class="update-date" datetime="2026-03-25">2026.03.25</time>
+                <h1>古文</h1>
+            </div>
+        </section>
+    </article>
+    <aside slot="sidebar" class="sidebar">
+        <Profile></Profile>
+    </aside>
+</PostLayout>
