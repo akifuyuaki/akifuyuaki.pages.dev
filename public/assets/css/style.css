@@ -2,6 +2,7 @@
     --color-accent: #a3c4f3;
 
     --color-text-normal: #3f3f3f;
+    --color-text-light: #9a9a9a;
 
     --color-link-normal: #6a93c8;
     --color-link-hover: #93bde8;
@@ -257,9 +258,56 @@ main.page {
 }
 
 main.page .container {
+    display: block;
+}
+
+main.page .container .article-container {
     display: grid;
     gap: 1.25rem;
     grid-template-columns: 7fr 3fr;
+}
+
+.breadcrumbs {
+    font-size: 0.9rem;
+    padding-inline: 1.5rem;
+    padding-bottom: 0.75rem;
+}   
+
+.breadcrumbs a {
+    color: var(--color-link-normal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.breadcrumbs a:hover {
+    color: var(--color-link-hover);
+}
+
+.breadcrumbs a:active {
+    color: var(--color-link-active);
+}
+
+.breadcrumbs a:visited {
+    color: var(--color-link-visited);
+}
+
+.breadcrumbs a:visited:hover {
+    color: var(--color-link-hover);
+}
+
+.breadcrumbs a:visited:active {
+    color: var(--color-link-active);
+}
+
+.breadcrumbs a:not(:last-child)::after {
+    color: var(--color-text-light);
+    content: ">";
+    padding-left: 0.25rem;
+}
+
+.breadcrumbs a:last-child {
+    color: var(--color-text-light);
+    font-weight: bold;
 }
 
 .main-content {
@@ -409,7 +457,7 @@ a .material-symbols-outlined {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    main.page .container {
+    main.page .container .article-container {
         grid-template-columns: 1fr;
     }
 }
@@ -425,7 +473,7 @@ a .material-symbols-outlined {
         grid-template-columns: 1fr;
     }
 
-    main.page .container {
+    main.page .container .article-container {
         grid-template-columns: 1fr;
     }
 }

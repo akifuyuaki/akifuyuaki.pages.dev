@@ -5,6 +5,12 @@ import IPAText from '@/components/IPAText.astro';
 ---
 
 <PostLayout title="文字と発音 | サンスクリット | 語学">
+    <nav slot="breadcrumbs" class="breadcrumbs">
+        <a href="/">秋冬秋の記憶域</a>
+        <a href="/languages/">語学</a>
+        <a href="/languages/sanskrit/">サンスクリット</a>
+        <a class="is-current">文字と発音</a>
+    </nav>
     <article class="main-content">
         <section>
             <div class="title-wrapper">
@@ -21,16 +27,18 @@ import IPAText from '@/components/IPAText.astro';
         <section>
             <h2>母音</h2>
             <p>サンスクリットには、5つの短母音 <SanskritText>a, i, u, ṛ, ḷ</SanskritText> と、5つの長母音 <SanskritText>ā, ī, ū, ṝ, (ḹ)</SanskritText>、4つの二重母音 <SanskritText>e, o, ai, au</SanskritText>があります。</p>
-            <p>特徴的かつ注意が必要なのは<SanskritText> e, o, ṛ, ṝ, ḷ </SanskritText>あたりです。</p>
+            <p>特徴的かつ注意が必要なのは<SanskritText> e, o, ṛ, ṝ, ḷ, ḹ </SanskritText>あたりです。</p>
             <p>
                 まず、<SanskritText>e, o</SanskritText> は <IPAText>/eː/, /oː/</IPAText> のように常に長母音で発音されます。
                 ちなみにこれは <SanskritText>e, o</SanskritText> の起源に由来しています。例えば、<SanskritText>e, o</SanskritText> は元々 ai, au という二重母音ですが、音変化によって e, o へと変化したため、拍の数はそのまま2拍分として数えられ、長母音しか存在せず、また、「二重母音」という扱いになっています。
+                じゃあ逆に今の二重母音 <SanskritText>ai, au</SanskritText> はどこから来たのかというと、これは ā + i (a + e もあるけど e は a + i だから aai で āi と同じ), ā + u から来ています。
             </p>
             <p>
                 次に <SanskritText>ṛ, ṝ, ḷ</SanskritText> について。どっからどう見ても子音ですが、サンスクリットでは母音として扱います。音韻論的に言うと「成節子音」ってやつです。
                 <SanskritText>ṛ</SanskritText> は日本語の「リ」みたいな感じで <IPAText>/ɾi/</IPAText>、<SanskritText>ṝ</SanskritText> は日本語の「リー」みたいな感じで <IPAText>/ɾiː/</IPAText>、ḷ は普通に <IPAText>/li/</IPAText> のように発音されるのが標準的です。
-                「サンスクリット」もラテン文字で表記すると <SanskritText>saṃskṛta</SanskritText>（<SanskritText>ṃ</SanskritText> については子音編で解説しますが、要するに「ン」の音です）ですし。
+                「サンスクリット」もラテン文字で表記すると <SanskritText>saṃskṛta</SanskritText>（<SanskritText>ṃ</SanskritText> については子音編で解説しますがとりあえず「ン」です）ですし。
             </p>
+            <p>そして <SanskritText>ḹ</SanskritText> はサンスクリットの単語にはほとんど登場しません。</p>
         </section>
     </article>
     <aside slot="sidebar" class="sidebar">
