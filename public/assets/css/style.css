@@ -469,6 +469,11 @@ a .material-symbols-outlined {
         --container-width: 95vw;
     }
 
+    .site-title {
+        font-size: 1.25rem;
+        padding-inline: 1.5rem;
+    }
+
     .home-links {
         grid-template-columns: 1fr;
     }
