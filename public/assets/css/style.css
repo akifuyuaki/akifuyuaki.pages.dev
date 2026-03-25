@@ -457,6 +457,24 @@ a .material-symbols-outlined {
     padding-bottom: 0.5rem;
 }
 
+#site-footer a {
+    color: var(--color-link-normal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#site-footer a:hover {
+    color: var(--color-link-hover);
+}
+
+#site-footer a:active {
+    color: var(--color-link-active);
+}
+
+#site-footer a:visited {
+    color: var(--color-link-visited);
+}
+
 /* for tablet */
 
 @media (max-width: 1199px) {
