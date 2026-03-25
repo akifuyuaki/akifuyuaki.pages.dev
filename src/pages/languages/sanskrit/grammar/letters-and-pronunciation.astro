@@ -1,14 +1,16 @@
 ---
 import PostLayout from '@/layouts/PostLayout.astro';
+import Profile from '@/components/Profile.astro';
 import SanskritText from '@/components/SanskritText.astro';
 import IPAText from '@/components/IPAText.astro';
 ---
 
-<PostLayout title="文字と発音 | サンスクリット | 語学">
+<PostLayout title="文字と発音 | 文法解説 | サンスクリット | 語学">
     <nav slot="breadcrumbs" class="breadcrumbs">
         <a href="/">秋冬秋の記憶域</a>
         <a href="/languages/">語学</a>
         <a href="/languages/sanskrit/">サンスクリット</a>
+        <a href="/languages/sanskrit/grammar/">文法解説</a>
         <a class="is-current">文字と発音</a>
     </nav>
     <article class="main-content">
@@ -40,12 +42,34 @@ import IPAText from '@/components/IPAText.astro';
             </p>
             <p>そして <SanskritText>ḹ</SanskritText> はサンスクリットの単語にはほとんど登場しません。文法体系としてまとめられたとき、<SanskritText>ḷ</SanskritText> に対する数合わせとして作られただけのやつです。かわいそう。</p>
         </section>
+        <section>
+            <h2>子音</h2>
+            <p>サンスクリットには33個 + α の子音があります。日本語が13 ~ 16個くらい、英語が24個ですから、かなり多いほうです（本当に多いのは100個くらいあるけどそれは置いとくとして）。</p>
+            <p>以下はその一覧です。</p>
+            <table>
+                <tr>
+                    <th></th>
+                    <th colspan="2">無気音</th>
+                    <th colspan="2">有気音</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>無声音</th>
+                    <th>有声音</th>
+                    <th>無声音</th>
+                    <th>有声音</th>
+                </tr>
+                <tr>
+                    <th>喉音</th>
+                    <td>ka</td>
+                    <td>ga</td>
+                    <td>kha</td>
+                    <td>gha</td>
+                </tr>
+            </table>
+        </section>
     </article>
     <aside slot="sidebar" class="sidebar">
-        <section>
-            <h2>プロフィール</h2>
-            <img src="/icon.png" alt="プロフィール画像" class="profile">
-            <p>少なくとも火星人ではありません。たのしく生きてます。最近はプログラミングと音楽が好きです。</p>
-        </section>
+        <Profile></Profile>
     </aside>
 </PostLayout>

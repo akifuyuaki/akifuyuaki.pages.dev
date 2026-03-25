@@ -1,5 +1,6 @@
 ---
 import PostLayout from '@/layouts/PostLayout.astro';
+import Profile from '@/components/Profile.astro';
 ---
 
 <PostLayout title="語学">
@@ -9,7 +10,10 @@ import PostLayout from '@/layouts/PostLayout.astro';
     </nav>
     <article class="main-content">
         <section>
-            <h1>語学</h1>
+            <div class="title-wrapper">
+                <time class="update-date" datetime="2026-03-25">2026/03/25</time>
+                <h1>語学</h1>
+            </div>
             <p>秋冬秋が学んできた言語について、いろいろまとめています。</p>
             <p>私自身、ただの一語学徒です。できる限り正確なまとめ、解説を心がけていますが、もし間違いがあれば<a href="https://x.com/akifuyuaki496" target="_blank" rel="noopener noreferrer">Twitter (現X)<span class="material-symbols-outlined">open_in_new</span></a>のDMに連絡いただけると幸いです。</p>
         </section>
@@ -25,6 +29,6 @@ import PostLayout from '@/layouts/PostLayout.astro';
         </section>
     </article>
     <aside slot="sidebar" class="sidebar">
-
+        <Profile></Profile>
     </aside>
 </PostLayout>

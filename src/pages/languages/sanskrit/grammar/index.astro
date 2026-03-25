@@ -1,0 +1,37 @@
+---
+import PostLayout from '@/layouts/PostLayout.astro';
+import Profile from '@/components/Profile.astro';
+---
+
+<PostLayout>
+    <nav slot="breadcrumbs" class="breadcrumbs">
+        <a href="/">秋冬秋の記憶域</a>
+        <a href="/languages/">語学</a>
+        <a href="/languages/sanskrit">サンスクリット</a>
+        <a class="is-current">文法解説</a>
+    </nav>
+    <article class="main-content">
+        <section>
+            <div class="title-wrapper">
+                <time class="update-date" datetime="2026-03-25">2026/03/25</time>
+                <h1>サンスクリットの文法解説</h1>
+            </div>
+            <p>サンスクリットの文法について解説しています。</p>
+        </section>
+        <section>
+            <h2><a href="letters-and-pronunciation">文字と発音</a></h2>
+            <p>サンスクリットの文字と発音について解説しています。</p>
+        </section>
+        <section>
+            <h2><a href="sandhi">連声</a></h2>
+            <p>サンスクリットの連声について解説しています。</p>
+        </section>
+        <section>
+            <h2><a href="a-stem-noun-declension">-a 語幹名詞の変化</a></h2>
+            <p>-a 語幹名詞の変化について解説しています。</p>
+        </section>
+    </article>
+    <aside slot="sidebar" class="sidebar">
+        <Profile></Profile>
+    </aside>
+</PostLayout>
